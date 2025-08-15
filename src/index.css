@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* SiteEase Brand Colors */
+    --color-primary-start: 337 47.02% 39.42%; /* #FF6A95 */
+    --color-primary-end: 270 70.84% 32.08%;   /* #7C00FF */
+    --color-background: 268 100% 11%;    /* #1B0039 */
+    --color-text: 0 0% 100%;             /* #FFFFFF */
+    --color-accent: 0 0% 100%;           /* #FFFFFF */
+    --color-background-secondary: 270 67.39% 47.6%;
+
+    /* Theme Implementation */
+    --background: var(--color-background);
+    --foreground: var(--color-text);
+
+    --card: 268 100% 13%;
+    --card-foreground: var(--color-text);
+
+    --popover: 268 100% 13%;
+    --popover-foreground: var(--color-text);
+
+    --primary: var(--color-primary-start);
+    --primary-foreground: var(--color-text);
+    --primary-dark: var(--color-primary-end);
+
+    --secondary: 268 50% 20%;
+    --secondary-foreground: var(--color-text);
+
+    --muted: 268 50% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 268 50% 20%;
+    --accent-foreground: var(--color-text);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--color-text);
+
+    --border: 268 50% 25%;
+    --input: 268 50% 20%;
+    --ring: var(--color-primary-start);
+
+    /* SiteEase Gradients */
+    --gradient-primary: linear-gradient(45deg, hsl(var(--color-background-secondary)), hsl(var(--color-background-secondary)));
+    --gradient-primary-soft: linear-gradient(45deg, hsl(var(--color-primary-start) / 0.1), hsl(var(--color-primary-end) / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--color-primary-start)) 0%, hsl(310, 48.91%, 39.34%) 50%, hsl(var(--color-primary-end)) 100%);
+    --gradient-text: linear-gradient(45deg, hsl(var(--color-primary-start)), hsl(var(--color-primary-end)));
+    
+    /* Brand-specific shadows */
+    --shadow-primary: 0 10px 40px -10px hsl(var(--color-primary-start) / 0.4);
+    --shadow-glow: 0 0 60px hsl(var(--color-primary-start) / 0.3);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same colors as SiteEase brand */
+    --background: var(--color-background);
+    --foreground: var(--color-text);
+
+    --card: 268 100% 13%;
+    --card-foreground: var(--color-text);
+
+    --popover: 268 100% 13%;
+    --popover-foreground: var(--color-text);
+
+    --primary: var(--color-primary-start);
+    --primary-foreground: var(--color-text);
+
+    --secondary: 268 50% 20%;
+    --secondary-foreground: var(--color-text);
+
+    --muted: 268 50% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 268 50% 20%;
+    --accent-foreground: var(--color-text);
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: var(--color-text);
+
+    --border: 268 50% 25%;
+    --input: 268 50% 20%;
+    --ring: var(--color-primary-start);
+    
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 268 100% 8%;
+    --sidebar-foreground: var(--color-text);
+    --sidebar-primary: var(--color-primary-start);
+    --sidebar-primary-foreground: var(--color-text);
+    --sidebar-accent: 268 50% 15%;
+    --sidebar-accent-foreground: var(--color-text);
+    --sidebar-border: 268 50% 20%;
+    --sidebar-ring: var(--color-primary-start);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
