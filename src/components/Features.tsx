@@ -36,8 +36,8 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-24 bg-card">
-      <div className="container mx-auto px-6">
+    <section id="features" className="py-24 bg-card border-t-gray-100">
+      <div className="container mx-auto px-6 ">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Everything You Need to
