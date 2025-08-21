@@ -5,7 +5,13 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
-
+@font-face {
+  font-family: cairo;
+  src: url("../src/assets/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
+}
+*{
+  font-family: cairo;
+}
 @layer base {
   :root {
     /* SiteEase Brand Colors */

@@ -4,14 +4,15 @@ import Features from "@/components/Features";
 import About from "@/components/About";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import PricingPlans from "@/components/Pricing";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" dir="rtl">
       <Header />
       <Hero />
       <Features />
-      <About />
+      <PricingPlans/>
       <CTA />
       <Footer />
     </main>

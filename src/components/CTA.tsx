@@ -15,43 +15,28 @@ const CTA = () => {
         <Card className="max-w-4xl mx-auto border border-border/30 shadow-2xl bg-card/95 backdrop-blur-lg">
           <CardContent className="p-12 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Ready to Build
-              <span className="block bg-gradient-text bg-clip-text text-transparent">
-                Your Next Site?
-              </span>
+             جاهز لإطلاق موقعك ؟
+              
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Join developers who've already discovered the fastest way to build 
-              beautiful, high-performance WordPress sites.
+            <p className="text-xl text-white mb-10 max-w-2xl mx-auto">
+             دعنا نحوّل فكرتك إلى موقع متكامل بتصميم عصري وأداء متفوّق، باستخدام ووردبريس أو أحدث تقنيات الويب.
+ابدأ الآن وامنح مشروعك الحضور الرقمي الذي يستحقه.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" variant="hero" className="px-8 py-4 text-lg">
-                <Download className="mr-2 w-5 h-5" />
-                Get Started Free
-                <ArrowRight className="ml-2 w-5 h-5" />
+               
+                تصفّح أعمالنا
+               
               </Button>
               <Button size="lg" variant="outline" className="px-8 py-4 text-lg">
-                <Github className="mr-2 w-5 h-5" />
-                View on GitHub
+              
+                 اطلب عرضًا الآن
               </Button>
             </div>
 
-            <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                MIT Licensed
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                Active Development
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                Community Driven
-              </div>
-            </div>
+          
           </CardContent>
         </Card>
       </div>

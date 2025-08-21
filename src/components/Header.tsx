@@ -14,20 +14,19 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-              Features
+            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors mx-10">
+                 الميزات
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
+            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors mx-10 ">
+              من نحن
             </a>
-            <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
-              Docs
+            <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors mx -10">
+              الأسعار
             </a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="hero">Get Started</Button>
+            <Button variant="hero">ابدأ</Button>
           </div>
 
           <Button variant="ghost" size="icon" className="md:hidden">

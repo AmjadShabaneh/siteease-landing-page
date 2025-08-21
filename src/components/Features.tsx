@@ -5,33 +5,33 @@ const Features = () => {
   const features = [
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
-      title: "Lightning Performance",
-      description: "Near-static site speed with intelligent caching and asset optimization built-in."
+      title: "سرعة وأداء متميز",
+      description: "مواقع محسّنة بمعايير حديثة تضمن سرعة التصفح وتجربة استخدام سلسة لزوارك."
     },
     {
       icon: <Layers className="w-8 h-8 text-primary" />,
-      title: "Starter Theme Bundle",
-      description: "Clean, responsive themes with modular block-based layouts and your brand gradient."
+      title: "قوالب مرنة ومخصصة",
+      description: "تصاميم متجاوبة قابلة للتخصيص بالكامل، تناسب مختلف الأجهزة وتمنحك مظهرًا احترافيًا."
     },
     {
       icon: <Palette className="w-8 h-8 text-primary" />,
-      title: "Brand-First Design",
-      description: "Customizer shortcuts for gradients, colors, and fonts. Your brand, perfectly styled."
+      title: "تصميم يرتكز على هويتك",
+      description: "ألوان متناسقة، خطوط واضحة، وتجربة مستخدم تعكس شخصية علامتك التجارية بدقة."
     },
     {
       icon: <Terminal className="w-8 h-8 text-primary" />,
-      title: "Developer Workflow",
-      description: "CLI commands to spin up fresh WP instances with all dependencies preconfigured."
+      title: "تطوير وفق احتياجاتك",
+      description: "كل موقع يُبنى بما يتناسب مع طبيعة نشاطك، سواء كان متجرًا إلكترونيًا، مدونة، أو موقعًا تعريفيًا."
     },
     {
       icon: <Shield className="w-8 h-8 text-primary" />,
-      title: "Essential Plugins Only",
-      description: "Curated bundle: caching, SEO controls, and customization tools. No bloat."
+      title: "حلول متكاملة وواقعية",
+      description: "نوفّر أساسيات الموقع التي تحتاجها فعلًا: الأمان، تحسين محركات البحث، وإدارة المحتوى بشكل منظم."
     },
     {
       icon: <Rocket className="w-8 h-8 text-primary" />,
-      title: "5-Minute Setup",
-      description: "Guided onboarding wizard handles sample content, gradients, and brand configuration."
+      title: "دعم مستمر وتحديثات",
+      description: "لا ينتهي عملنا بتسليم الموقع، بل نرافقك بخدمات الدعم الفني والتطوير المستمر لتبقى مواقعك مواكبة للتغيرات."
     }
   ];
 
@@ -39,16 +39,14 @@ const Features = () => {
     <section id="features" className="py-24 bg-card border-t-gray-100">
       <div className="container mx-auto px-6 ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Everything You Need to
-            <span className="block bg-gradient-text bg-clip-text text-transparent">
-              Ship Fast
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 ">
+          كل ما تحتاجه لإطلاق موقعك 
+            <span className="block bg-gradient-text bg-clip-text mt-3 text-transparent p-1">
+            بسرعة واحترافية
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            SiteEase combines WordPress flexibility with modern development practices, 
-            giving you the perfect foundation for high-performance websites.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-10">
+نقوم بتصميم وتطوير مواقع عصرية عالية الأداء باستخدام أحدث التقنيات، لنمنحك حضورًا رقميًا يعكس هوية مشروعك ويحقق أهدافك.          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
