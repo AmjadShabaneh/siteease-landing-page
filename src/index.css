@@ -6,11 +6,11 @@
 All colors MUST be HSL.
 */
 @font-face {
-  font-family: cairo;
-  src: url("../src/assets/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
+  font-family: 'Cairo';
+  src: url("../public/Cairo/Cairo-VariableFont_slnt,wght.ttf") format('truetype');
 }
 *{
-  font-family: cairo;
+  font-family: 'Cairo',sans-serif;
 }
 @layer base {
 
