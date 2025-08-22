@@ -3,62 +3,65 @@ import React from "react";
 const PricingPlans: React.FC = () => {
     const plans = [
         {
-            price: "45$",
-            period: "شهرياً",
-            title: "الخطة المبتدئة",
+            price: "300₪",
+            period: "",
+            title: "صفحة هبوط / صفحة شخصية",
             features: [
-                { text: "مشاريع غير محدودة", active: true },
-                { text: "هاشتاقات محسّنة", active: true },
-                { text: "لوحة التحكم", active: true },
-                { text: "+300 مكون", active: false },
-                { text: "دعم عبر الدردشة", active: false },
-                { text: "تخزين سحابي", active: false },
+                { text: "قالب جاهز", active: true },
+                { text: "تخصيص بسيط", active: true },
+                { text: "نموذج تواصل", active: true },
+                { text: " ربط شبكات التواصل", active:true },
+                { text: "دعم فني لمدة خمس مرات", active: true },
+                { text: "استضافة خاصة", active: true },
             ],
             button: "اختر الخطة",
             popular: false,
             selected: false,
+            link:"https://wa.me/970566243357?text=مرحبا%20اريد%20صفحة%20هبوط%20/%20صفحة%20شخصية%20-%20ووردبريس"
         },
         {
-            price: "60$",
-            period: "شهرياً",
-            title: "الخطة الأساسية",
+            price: "500₪",
+            period: "",
+            title: "موقع أعمال صغير / شركة محلية",
             features: [
-                { text: "مشاريع غير محدودة", active: true },
-                { text: "هاشتاقات محسّنة", active: true },
-                { text: "لوحة التحكم", active: true },
-                { text: "+300 مكون", active: true },
-                { text: "دعم عبر الدردشة", active: false },
-                { text: "تخزين سحابي", active: false },
-            ],
-            button: "تم الاختيار",
-            popular: true,
-            selected: true,
-        },
-        {
-            price: "79$",
-            period: "شهرياً",
-            title: "خطة المؤسسات",
-            features: [
-                { text: "مشاريع غير محدودة", active: true },
-                { text: "هاشتاقات محسّنة", active: true },
-                { text: "لوحة التحكم", active: true },
-                { text: "+300 مكون", active: true },
-                { text: "دعم عبر الدردشة", active: true },
-                { text: "تخزين سحابي", active: true },
+                { text: "حتى 8 صفحات", active: true },
+                { text: "قالب معدل أو تصميم بسيط مخصص ", active: true },
+                { text: "تحسين SEO أساسي", active: true },
+                { text: " نموذج تواصل", active: true },
+                { text: "إعداد استضافة ودومين", active: true },
+                { text: "إضافات أخرى", active: true },
             ],
             button: "اختر الخطة",
             popular: false,
             selected: false,
+            link:"https://wa.me/970566243357?text=موقع%20أعمال%20صغير%20/%20شركة%20محلية%20-%20ووردبريس"
+        },
+        {
+            price: " غير ثابت",
+            period: "",
+            title: "متجر إلكتروني ",
+            features: [
+                { text: "إعداد WooCommerce", active: true },
+                { text: "تكامل بوابات الدفع", active: true },
+                { text: "إعداد خيارات الشحن ", active: true },
+                { text: "صفحات منتجات وسياسة استرجاع", active: true },
+                { text: "تدريب على إدارة المنتجات", active: true },
+                { text: "إضافات أخرى", active: true },
+            ],
+            button: "اختر الخطة",
+            popular: false,
+            selected: false,
+            link:"https://wa.me/970566243357?text=متجر%20إلكتروني%20(WooCommerce%20صغير–متوسط)"
         },
     ];
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-background">
+        <div className="flex justify-center  items-center min-h-screen bg-background">
             <div className="flex flex-col md:flex-row gap-6 w-full max-w-5xl" dir="rtl">
                 {plans.map((plan, idx) => (
                     <div
                         key={idx}
-                        className={`flex-1 rounded-2xl p-6 shadow-lg text-center hover:shadow-[0px_0px_100px_-17px_rgba(147,_51,_234,_0.40)] duration-500  ${plan.selected
+                        className={`flex-1 pricing-card rounded-2xl p-6 shadow-lg text-center hover:shadow-[0px_0px_100px_-17px_rgba(147,_51,_234,_0.40)] hover:bg-purple-700 hover:text-white hover:scale-105 duration-500  ${plan.selected
                                 ? "bg-purple-700 text-white scale-105 "
                                 : "bg-card text-white "
                             } transition transform`}
@@ -96,14 +99,14 @@ const PricingPlans: React.FC = () => {
                         </ul>
 
                         {/* زر */}
-                        <button
-                            className={`w-full py-2 rounded-xl font-semibold ${plan.selected
+                        <a href={plan.link}
+                            className={`w-full block py-2 rounded-xl font-semibold pricing-btn ${plan.selected
                                     ? "bg-card/90 text-white hover:bg-background duration-1000"
-                                    : "bg-purple-600 text-white hover:bg-purple-700"
+                                    : "bg-purple-600 text-white hover:bg-purple-700 w-full"
                                 }`}
                         >
                             {plan.button}
-                        </button>
+                        </a>
                     </div>
                 ))}
             </div>

@@ -14,13 +14,13 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors mx-10">
+            <a href="#features" className="text-muted-foreground link hover:text-foreground transition-colors mx-10">
                  الميزات
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors mx-10 ">
+            <a href="#about" className="text-muted-foreground link hover:text-foreground transition-colors mx-10 ">
               من نحن
             </a>
-            <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors mx -10">
+            <a href="#docs" className="text-muted-foreground link hover:text-foreground transition-colors mx -10">
               الأسعار
             </a>
           </nav>
