@@ -56,7 +56,7 @@ const PricingPlans: React.FC = () => {
     ];
 
     return (
-        <div className="flex justify-center  items-center min-h-screen bg-background">
+        <div className="flex justify-center  items-center min-h-screen bg-background p-4">
             <div className="flex flex-col md:flex-row gap-6 w-full max-w-5xl" dir="rtl">
                 {plans.map((plan, idx) => (
                     <div

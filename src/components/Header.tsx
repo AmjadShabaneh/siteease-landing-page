@@ -3,8 +3,8 @@ import { Menu } from "lucide-react";
 import logo from "@/assets/logo2.png";
 const Header = () => {
   return (
-    <div className="w-full bg-slate-400 z-40 flex justify-center">
-    <header className="fixed top-6 w-7/12 z-50 bg-background/90 backdrop-blur-lg border-b border-border mx-auto rounded-xl">
+    <div className="w-full bg-slate-400 z-40 flex justify-center ">
+    <header className="fixed md:top-6 w-full sm:mt-0 2xl:w-7/12 lg:w-10/12 md:w-full sm:w-full z-50 bg-background/90 backdrop-blur-lg border-b border-border mx-auto md:mx-0 rounded-xl">
       <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -20,7 +20,7 @@ const Header = () => {
             <a href="#about" className="text-muted-foreground link hover:text-foreground transition-colors mx-10 ">
               من نحن
             </a>
-            <a href="#docs" className="text-muted-foreground link hover:text-foreground transition-colors mx -10">
+            <a href="#docs" className="text-muted-foreground link hover:text-foreground transition-colors mx-10">
               الأسعار
             </a>
           </nav>
